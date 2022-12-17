@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const experiments = require('./models/experiments');
-const db = require('./models/firebase_connect');
+const experiments = require('../models/experiments');
+const db = require('../models/firebase_connect');
 
 router.post('/create', async (req, res) => {
 	try {
